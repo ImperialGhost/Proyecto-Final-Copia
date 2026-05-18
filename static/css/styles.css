@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+.contenedor {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ff03cd;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    margin-top: 7px;
+}
+
+.boton-formulario {
+    width: 100%;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 8px;
+    margin-top: 7px;
+}

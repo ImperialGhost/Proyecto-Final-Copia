@@ -1,6 +1,9 @@
 from typing import List
 from entities.subtotal_producto import SubtotalProducto
 
+# la libreria typing se utiliza para proporcionar soporte para anotaciones de tipo en Python.
+# en este caso la usamos debido a que la lista de productos debe tener solo un tipo de dato.
+
 class Pedido:
 
 
@@ -13,6 +16,9 @@ class Pedido:
     def agregar_item(self, producto: SubtotalProducto, cantidad: int):
         nuevo_item = SubtotalProducto(producto, cantidad)
         self.productos.append(nuevo_item)
+
+    # el @property lo usamos para definir los metodos como propiedades, de manera que podemos acceder a ellos
+    # como si fuesen atributos sin la necesidad de estarlos llamando como funciones. :D
 
     @property
     def suma_subtotales(self):

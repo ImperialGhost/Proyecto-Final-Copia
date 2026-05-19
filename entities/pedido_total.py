@@ -10,7 +10,7 @@ class Pedido:
     def __init__(self):
         self.productos: List[SubtotalProducto] = []
 
-    def agregar_item(self, producto, cantidad):
+    def agregar_item(self, producto: SubtotalProducto, cantidad: int):
         nuevo_item = SubtotalProducto(producto, cantidad)
         self.productos.append(nuevo_item)
 

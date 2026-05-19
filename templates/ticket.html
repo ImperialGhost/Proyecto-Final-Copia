@@ -29,15 +29,15 @@
 </div>
 <div class="contenedor">
     <div style="margin-top: 30px; display: flex; flex-direction: column; gap: 10px;">
-        <a href="{{ url_for('menu') }}" class="boton-formulario" 
-           style="text-decoration: none; text-align: center; background-color: #4a4a4a;">
-           Seguir comprando
+            <a href="{{ url_for('menu') }}" class="boton-agregar" 
+            style="text-decoration: none; text-align: center;">
+            Seguir comprando
         </a>
 
-        <a href="{{ url_for('limpiar_pedido') }}" class="boton-formulario" 
-           style="text-decoration: none; text-align: center; background-color: #ff0000;"
-           onclick="return confirm('¿Estás seguro de que quieres borrar todo el pedido?')">
-           Limpiar Pedido / Nuevo Cliente
+        <a href="{{ url_for('limpiar_pedido') }}" class="boton-limpiar" 
+            style="text-decoration: none; text-align: center;"
+            onclick="return confirm('¿Estás seguro de que quieres borrar todo el pedido?')">
+            Limpiar Pedido / Nuevo Cliente
         </a>
     </div>
 </div>

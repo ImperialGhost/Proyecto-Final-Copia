@@ -22,7 +22,7 @@
     <div style="text-align: right;">
         <p>Subtotal neto: ${{ "{:,.2f}".format(pedido.suma_subtotales) }}</p>
         <p>IVA (16%): ${{ "{:,.2f}".format(pedido.monto_iva) }}</p>
-        <h2 style="color: #00ff00;">TOTAL: ${{ "{:,.2f}".format(pedido.total_final) }}</h2>
+        <h2 style="color: #157115;">TOTAL: ${{ "{:,.2f}".format(pedido.total_final) }}</h2>
     </div>
     
     <a href="{{ url_for('menu') }}" style="color: white; text-align: center; display: block;">Volver al menú</a>
